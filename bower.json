@@ -1,0 +1,20 @@
+{
+  "name": "timeframejs",
+  "homepage": "https://github.com/andrewjensen/timeframejs",
+  "authors": [
+    "Andrew Jensen (@andrewjensen on Github)"
+  ],
+  "description": "A library for creating beautiful and interactive timelines with jQuery and HTML5.",
+  "main": "lib/timeframe.js",
+  "keywords": [
+    "timeline"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
