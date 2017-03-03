@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Example: US Presidents &amp; Vice Presidents</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<div id="container">
+			<h1>Example: US Presidents &amp; Vice Presidents</h1>
+
+			<div id="timeframe"></div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="../lib/timeframe.js"></script>
+		<script>
+
+		var presidents = {
+			name: "US Presidents",
+			color: "#000000",
+			spans: [
+				{
+					name: "George Washington",
+					text: "1789 to 1797",
+					start: "1789-04-30",
+					end: "1797-03-04"
+				},
+				{
+					name: "John Adams",
+					text: "1797 to 1801",
+					start: "1797-03-04",
+					end: "1801-03-04"
+				},
+				{
+					name: "Thomas Jefferson",
+					text: "1801 to 1809",
+					start: "1801-03-04",
+					end: "1809-03-04"
+				},
+				{
+					name: "James Madison",
+					text: "1809 to 1817",
+					start: "1809-03-04",
+					end: "1817-03-04"
+				},
+				{
+					name: "James Monroe",
+					text: "1817 to 1825",
+					start: "1817-03-04",
+					end: "1825-03-04"
+				},
+
+				{
+					name: "John Adams",
+					text: "1789 to 1797",
+					start: "1789-04-21",
+					end: "1797-03-04"
+				},
+				{
+					name: "Thomas Jefferson",
+					text: "1797 to 1801",
+					start: "1797-03-04",
+					end: "1801-03-04"
+				},
+				{
+					name: "Aaron Burr",
+					text: "1801 to 1805",
+					start: "1801-03-04",
+					end: "1805-03-04"
+				},
+				{
+					name: "George Clinton",
+					text: "1805 to 1812",
+					start: "1805-03-04",
+					end: "1812-04-20",
+					color: "#FF0000"
+				},
+				{
+					name: "Elbridge Gerry",
+					text: "1813 to 1814",
+					start: "1813-03-04",
+					end: "1814-11-23",
+					color: "#FF0000"
+				},
+				{
+					name: "Daniel Tompkins",
+					text: "1817 to 1825",
+					start: "1817-03-04",
+					end: "1825-03-04"
+				},
+			]
+		};
+
+		var t = Timeframe("#timeframe")
+			.addCategory(presidents)
+			.start("1787-01-01")
+			.end("1826-01-01")
+			.majorTicks(5, "years")
+			.minorTicks(1, "year")
+			.draw();
+
+		</script>
+
+	</body>
+</html>
